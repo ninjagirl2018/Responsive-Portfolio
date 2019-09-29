@@ -1,0 +1,401 @@
+/**
+ This will be the stylesheet for all 3 html pages of the Portfolio Assignment since the page styles are relatively similar
+ **/
+
+ /**The below section lists CSS common to all 3 pages  **/
+
+
+body {
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../hotel-wallpaper.png");
+  width: auto;
+  color: #ffffff;
+}
+
+header {
+  position: absolute;
+  top: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 30px;
+  padding-right: 25px;
+}
+
+nav {
+  margin-left: 850px;
+  margin-top:  50px;
+  display: flex;
+}
+
+a {
+  color: #777777;
+}
+
+h1 {
+  background-color: #ffffff;
+  border-top: #cccccc 2px solid;
+  border-bottom: #cccccc 2px solid;
+  height: 75px;
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+hr {
+    border: 1px solid #dddddd;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #4aaaa5;
+}
+
+footer {
+  height:  55px;
+  background-color: #666666;
+  margin-top: 50px;
+  padding-top: 10px;
+  border-top: 8px solid #4aaaa5; 
+  font-size: 10px;
+}
+
+#footer-text {
+  text-align: center;
+}
+
+
+/**The below section lists CSS for Index/About Page  **/
+
+section {
+  background-color: #4aaaa5;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 200px;
+  height: 35px;
+  border: 20px #cccccc;
+  margin-left: 6em;
+  font-size: 28px; 
+  text-align: center;
+}
+
+#bio {
+  width: 175px;
+  height: 200px;
+  background-color: #ffffff;
+  padding-bottom: 15px;
+  border-right: 20px solid #ffffff;
+  float: left;
+}
+
+#intro {
+  background-color: #ffffff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-right: 200px;
+  margin-left: 170px;
+  border: 1.5px solid #dddddd;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  height: 450px;
+  
+}
+
+p {
+  border-left: 20px;
+  margin-right:  50px;
+  padding-left: 20px;
+  text-align: justify;
+  color: #82807d;
+  line-height: .75cm;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/**The below section lists CSS for the Contact Page  **/
+
+#form{
+  background-color:#ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #777777;
+  margin-right: 6em;
+  margin-left: 170px;
+  border: 2px solid #dddddd;
+  padding: 25px;
+  line-height: 1cm;
+  padding-top: 0px;
+  height:  500px;
+  width: 960px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=free-form], select {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+button[type=button], select {
+  background-color: #4aaaa5;
+  border: none;
+  color: white;
+  padding: 10px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+  /**The below section lists CSS for the Portfolio Page  **/
+
+#Gallery{
+  background-color:#ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #777777;
+  margin-right: 6em;
+  margin-left: 170px;
+  border: 1.5px solid #dddddd;
+  padding-left: 25px;
+  padding-right: 25px;
+  height:  550px;
+  width: 960px;
+}
+
+.Project-Tile {
+  float: left;
+  width: 200px;
+  height: 175px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 30px;
+  position: relative;
+}
+
+.Labels {
+  position: absolute; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  height: 32px;
+  top: 125px;
+  width: inherit;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  
+}
+img {
+  width: inherit;
+}
+
+.Row-1 {
+  padding-left:  87px;
+}
+
+.Row-2 {
+  padding-left: 220px;
+}
+
+/** for 640 wide screen INDEX **/
+
+@media (max-width: 640px) {
+  nav { 
+    margin-left: 125px;
+    margin-top: 120px;
+    position: absolute;
+  }
+
+  nav ul {
+    display: flex;
+    margin: 25px;
+    
+  }
+  
+  #intro {
+    width: 85%;
+    margin-left: 25px;
+    margin-top: 50px;
+    margin-top: 85px;
+  }
+
+  p {
+    line-height: .5cm;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding-left: 20px;
+  }
+
+  footer {
+    width: 100%;
+    margin-left: 17px;
+  }
+
+  section {
+    margin-left: 25px;
+  }
+
+  #form {
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 80px;
+    width: 85%;
+    height: 550px;
+  }
+
+  #Gallery{
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 80px;
+    width: 85%;
+    height: 1140px;
+  }
+
+  .Row-1 {
+  padding-left:  125px;
+}
+
+  .Row-2 {
+  padding-left: 125px;
+  }
+}
+
+  /** for 768 wide screen INDEX **/
+@media (min-width: 641px) and (max-width: 768px) {
+
+  nav { 
+    margin-left: 375px;
+    position: absolute;
+  }
+
+  nav ul {
+    display: flex;
+    margin: 25px;
+    margin-top: 5px;
+  }
+    
+  #intro {
+    width: 90%;
+    margin-left: 25px;
+    margin-right: 25%;
+  }
+
+  section {
+    margin-left: 25px;
+  }
+
+  #form {
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 90%;
+    height: 550px;
+  }
+
+  #Gallery{
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 40px;
+    width: 90%;
+    height: 725px;
+  }
+
+  .Row-1 {
+  padding-left:  75px;
+  }
+
+  .Row-2 {
+  padding-left: 75px;
+  }
+}
+
+
+  /** for 980 wide screen INDEX **/
+  @media (min-width: 769px) and (max-width: 980px) {
+
+    nav { 
+      margin-left: 585px;
+      position: absolute;
+    }
+  
+    nav ul {
+      display: flex;
+      margin: 25px;
+      margin-top: 5px;
+    }
+      
+    #intro {
+      width: 90%;
+      margin-left: 25px;
+      margin-right: 25%;    
+    }
+  
+    section {
+      margin-left: 25px;
+    }
+
+    #form {
+      margin-right: 25px;
+      margin-left: 25px;
+      margin-top: 25px;
+      width: 90%;
+      height: 550px;
+    }
+  }
+
+  /** ran into the same problem that Michael Hrivnak had re "CHrome Device Mode Emulation Media Queries Not Working) for this file, "Porfolio.html" only and had to rename the html elements in this file just to get it working. **/
+  @media (min-width: 770px) and (max-width: 990px) {
+
+    #Gallery{
+      margin-right: 25px;
+      margin-left: 25px;
+      margin-top: 40px;
+      width: 58%;
+      height: 750px;
+    }
+    
+    .special {
+      margin-left: 585px;
+      position: absolute;
+    }
+
+    .special ul {
+      display: flex;
+      margin: 25px;
+      margin-top: 5px;
+    }
+
+    section {
+      margin-left: 25px;
+    }
+      
+    .Row-1 {
+      padding-left:  25px;
+      }
+    
+      .Row-2 {
+      padding-left: 25px;
+      }
+  }
